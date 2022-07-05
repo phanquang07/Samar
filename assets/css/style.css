@@ -225,6 +225,7 @@ a {
   background-image: url(../img/pic2.png);
   background-position: top;
   background-size: contain;
+  overflow: hidden;
 }
 
 .saCarousel-contents {
@@ -280,6 +281,11 @@ a {
 }
 
 /* Services */
+.services {
+  overflow: hidden;
+  padding-bottom: 115px;
+}
+
 .services-title {
   text-align: center;
 }
@@ -321,15 +327,17 @@ a {
 
 .about {
   padding-bottom: 85px;
+  overflow: hidden;
+  background-image: url('../img/bg15.png');
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 .about-contents {
-  background-image: url('../img/bg15.png');
-  background-size: cover;
-  background-position: center right;
   display: flex;
   justify-content: flex-end;
-  /* flex-wrap: wrap; */
+  align-items: center;
   position: relative;
 }
 
@@ -423,7 +431,7 @@ a {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-
+  overflow: hidden;
 }
 
 .features-contents {
@@ -492,4 +500,18 @@ a {
 
 .features-right {
   width: 50%;
+}
+
+.features-img {
+  margin-right: -80px;
+}
+
+.features-img img {
+  max-width: 100%;
+  animation: move 5s infinite;
+}
+
+/* Portfolio */
+.portfolio-title {
+  text-align: center;
 }
